@@ -6,7 +6,7 @@ import { BrowserRouter,Routes,Route,useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"></link>
 import Home from "./Pages/Home"
-import ContactUs from './Pages/contactus'
+import ContactUs from "./Pages/ContactUs";
 import Sletter from './Pages/sletter'
 import PrintMedia from './Pages/PrintMedia'
 import ElectronicMedia from './Pages/ElectronicMedia'
