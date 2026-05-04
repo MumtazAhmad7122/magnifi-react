@@ -32,8 +32,10 @@ function PageTitleUpdater() {
 function App() {
   return (
     <>
+      {/* 1. PageTitleUpdater ab sahi kaam karega kyunki iska Parent (main.jsx) mein Router maujood hai */}
       <PageTitleUpdater />
       
+      {/* 2. BrowserRouter yahan se hata diya gaya hai taake duplicate router ka error na aaye */}
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/contactus" element={<ContactUs />} />

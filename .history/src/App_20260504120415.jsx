@@ -1,37 +1,23 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter,Routes,Route,useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"></link>
 import Home from "./Pages/Home"
-import ContactUs from "./Pages/ContactUs";
-import Sletter from "./Pages/Sletter";
+import ContactUs from './Pages/contactus'
+import Sletter from './Pages/sletter'
 import PrintMedia from './Pages/PrintMedia'
 import ElectronicMedia from './Pages/ElectronicMedia'
 import TheDawoodFoundation from './Pages/TheDawoodFoundation'
 import JugaarGhar from './Pages/JugaarGhar'
-
-function PageTitleUpdater() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const titles = {
-      '/': 'Home',
-      '/contactus': 'Contact Us | Get in Touch',
-    };
-
-    const pageName = location.pathname.split('/').filter(Boolean).pop();
-    const formattedName = pageName 
-      ? pageName.charAt(0).toUpperCase() + pageName.slice(1).replace(/-/g, ' ') 
-      : 'Home';
-
-    document.title = titles[location.pathname] || `${formattedName} | MyApp`;
-  }, [location]);
-
-  return null;
-}
+// ... imports same rahenge
 
 function App() {
   return (
     <>
+      {/* Yeh line ab error nahi degi kyunki main.jsx mein Router hai */}
       <PageTitleUpdater />
       
       <Routes>
@@ -46,5 +32,3 @@ function App() {
     </>
   );
 }
-
-export default App;
