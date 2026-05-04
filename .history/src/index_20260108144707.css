@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
+:root {
+  /* Define your "Theme" here */
+  --primary-color: #c62026;
+  --primary-hover: #000;
+  --heading-color: #c62026;
+  --text-color: #000;
+  --main-font: 'Roboto', sans-serif;
+  --border-color:#c62026;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--text-color);
+}
+
+p{
+ font-family: var(--main-font);
+ font-size: 16px;
+ color: #000; 
+}
+a{
+  font-family: var(--main-font);
+  font-size: 17px;
+  color: #000!important;
+}
+h1, h2, h3 {
+    font-family:var(--main-font); ;
+  color: var(--heading-color)!important;
+}
+h2{
+    font-size: 60px!important;
+    font-weight:600!Important;
+}
+h3{
+  color: #000!Important;
+}
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border-color:var(--border-color) ;
+  font-size: 16px;
+  font-weight:700;
+  
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+ .btn {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+  font-family: var(--main-font);
+}
+.btn:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+}
+a {
+  color: var(--text-color);
+  font-family: var(--main-font)!Important;
+  font-weight:400;
+
+}
+.time-info p {
+    margin: 0;
+}
+.info {
+    margin-left: 30px;
+}
+.timee {
+    margin-bottom: 46px;
+}
+.sc-img img {
+    height: 683px;
+    object-fit: cover;
+}
+.card {
+            position: relative;
+            background: #1a1a1a;
+            overflow: hidden; /* Important: Clips the hidden text */
+            display: flex;
+            align-items: flex-end;
+            color: white;
+            cursor: pointer;
+            border:none!important;
+        }
+
+        /* Decorative background circle */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.1);
+          
+        }
+
+        /* The wrapper for Heading + Paragraph */
+        .content {
+            transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            transform: translateY(100px); /* Keeps paragraph hidden below the edge */
+        }
+
+        .heading {
+            margin-bottom: 38px;
+            transition: color 0.3s ease;
+            color: #fff;
+        }
+       .card:hover .heading{
+        margin-bottom:13px;
+       }
+        .paragraph {
+            font-size: 1rem;
+            line-height: 1.5;
+            opacity: 0; /* Invisible initially */
+            transition: opacity 0.4s ease;
+            color: #fff;
+        }
+
+        /* Hover Action */
+      .card:hover .content {
+    transform: translateY(0);
+    box-shadow: 0px -102px 6px #c62026;
+    background: #c62026;
+    padding: 0px 15px;
+    left: 0;
+}
+
+        .card:hover .paragraph {
+            opacity: 1; /* Fades in the text */
+        }
+
+        .card:hover .heading {
+            color: #fff; /* Changes color on hover */
+        }
+        .card {
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left:14px;
+}
+
+.content a {
+    opacity: 1;
+}
+
+.card:hover h5 {margin-bottom: 12px;}
+
+.exhibition-sec .col-md-4 {
+    margin-bottom: 32px;
+}
+
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers the line */
+  gap: 6px;            /* space between text and line */
+}
+
+h2 .line {
+    height: 4px;
+    background: #c62026;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 130px;
+    min-width: 45px;
+    opacity: 0.8;
+}
+
+.m-shadow {
+    border: none!important;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 0px 8px #00000059;
+}
+
+section.about-sec button {
+    height: 44px;
+    width: 17%;
+    margin: 0 auto;
+}
+.gift .heading {
+    font-size: 18px;
+    line-height:18px;
+}
+
+.gift .paragraph {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.gift .card:hover .content {
+   
+    box-shadow: 0px -72px 6px #c62026;
+    
+}
+
+footer{
+  background-color: #222222;
+}
+footer ul li a {
+    line-height: 32px;
+}
+.social-blk.pt-5.pb-.main-social {
+    border-top: 2px solid #606060;
+    border-bottom: 2px solid #606060;
+}
+.aspc-img img{
+  width:30%!Important;
+}
+.top-bar{
+  background: url('./src/assets/imagee/');
+}

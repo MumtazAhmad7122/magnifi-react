@@ -1,0 +1,57 @@
+import React from 'react'
+import { Container,Row,Col } from 'react-bootstrap'
+import li
+
+function Footer() {
+  return (
+    <footer className='pt-5 pb-5'>
+     <Container>
+      <Row>
+      <Col md={3}>
+      <div className='section-1'>
+        <h5 className='text-white'>Timings:</h5>
+        <p class="m-0 text-white">Monday - Thursday</p>
+        <p class="m-0 text-white">9:00 am – 5:00 pm</p>
+        <br/>
+        <p className='text-white'>Friday: CLOSED</p>
+        <br/>
+        <p class="m-0 text-white">Saturday & Sunday</p>
+        <p class="m-0 text-white">2:00 pm – 9:00 pm</p>
+        <br/>
+        <p className='text-white'>PLEASE NOTE THAT ON SATURDAY, 10TH JANUARY, WE ARE OPEN 10:00 AM TO 7:30 PM (due to a private event)</p>
+        <br/>
+        <p className='text-white'>Address:<br/>Plot no 1 RY – 15 Railway Quarter,Karachi.</p>
+        <br/>
+        <p class="m-0 text-white">Phone</p> 
+        <p class="m-0 text-white">General enquiries: (021) 388 99 672</p> 
+        <p class="m-0 text-white">Birthday bookings: 0300 045 8674</p>
+       <p class="m-0 text-white">School visit bookings: 0300 859 1689</p>
+       <br/>
+       <p className='text-white'>Copyright © The Dawood Foundation’s<br/>MagnifiScience Centre 2021 - 2024</p>
+        </div>
+      </Col>
+      <Col md={3}>
+      <div className='list'>
+        <h5>Visit</h5>
+        <ul>
+        <li><Link to="#" className="nav-link">Visit Info</Link></li>
+        <li><Link to="#" className="nav-link">School Visits</Link></li> 
+        <li><Link to="#" className="nav-link">Group Visits</Link></li> 
+        <li><Link to="#" className="nav-link">Corporate Packages</Link></li>
+        <li><Link to="#" className="nav-link">Birthday Party Packages</Link></li>
+        <li><Link to="#" className="nav-link">Would you like us to visit you</Link></li>
+         <li><Link to="#" className="nav-link">Terms and Conditions</Link></li>
+        </ul>
+      </div>
+      </Col>
+      <Col md={3}>
+      </Col>
+      <Col md={3}>
+      </Col> 
+      </Row>
+      </Container>     
+    </footer>
+  )
+}
+
+export default Footer
